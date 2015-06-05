@@ -1,6 +1,4 @@
-//import Chiasm from "curran/chiasm";
-
-var Chiasm = "hello";
+import Chiasm from "curran/chiasm";
 
 export {
   Chiasm
