@@ -40,4 +40,6 @@ Chiasm-bundle will need to take as input a set of plugins, and based on that, dy
 
 If `package.json` is used to specify a collection of Chiasm plugins to include in the bundle, the Chiasm-bundle tool can read that file and dynamically generate a top-level JS module for the bundle that includes all of them via `require()` statements and makes them available to the Chiasm runtime.
 
-Once the top-level JS module for the bundle is generated, Browserify can be used to generate the complete bundle using that module as the entry point. Since Browserify supports shims, Chiasm-bundle can leverage its shim configuration options.
+Once the top-level JS module for the bundle is generated, Browserify can be used to generate the complete bundle using that module as the entry point.
+
+Since Browserify supports shims for browser globals via [browserify-shim](https://github.com/thlorenz/browserify-shim), Chiasm-bundle can leverage its shim configuration options, which are conveniently embedded within `package.json`.
