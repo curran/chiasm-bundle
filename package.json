@@ -1,32 +1,25 @@
 {
-  "jspm": {
-    "directories": {},
-    "dependencies": {
-      "curran/chiasm": "github:curran/chiasm@^0.1.7",
-      "lodash": "npm:lodash@^3.9.3",
-      "model": "github:curran/model@^0.2.3"
-    },
-    "devDependencies": {
-      "babel": "npm:babel-core@^5.4.3",
-      "babel-runtime": "npm:babel-runtime@^5.4.3",
-      "core-js": "npm:core-js@^0.9.10"
-    }
-  },
   "name": "chiasm-bundle",
-  "description": "A production-ready bundle of Chiasm and its plugins.",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "A tool for building Chiasm distributions with bundled plugins.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "make test"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/curran/chiasm-bundle.git"
   },
+  "keywords": [
+    "visualization"
+  ],
   "author": "Curran Kelleher",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/curran/chiasm-bundle/issues"
   },
-  "homepage": "https://github.com/curran/chiasm-bundle"
+  "homepage": "https://github.com/curran/chiasm-bundle",
+  "dependencies": {
+    "chiasm": "^0.1.7"
+  }
 }
